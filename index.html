@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Authentication with Liveness Detection</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.7.0"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Face Authentication with Liveness Detection</h2>
+        <div id="video-container">
+            <video id="webcam" autoplay playsinline></video>
+            <canvas id="canvas" style="display: none;"></canvas>
+        </div>
+        <div id="status">Initializing...</div>
+        <button id="start-button" onclick="init()">Start Detection</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
